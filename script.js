@@ -23,8 +23,6 @@ function zoomDiv(){
 	}
 
 	function setVendor(element, property, value) {
-	console.log(maxH, maxW);
-
 		element.style["webkit" + property] = value;
 		element.style["moz" + property] = value;
 		element.style["ms" + property] = value;
@@ -34,5 +32,4 @@ function zoomDiv(){
 		element.style.left = 'calc(50% - ' + maxW / 2 + 'px)';
 	}
 	setVendor(game, 'Transform', scale)
-
 }
